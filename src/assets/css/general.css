@@ -1,0 +1,14 @@
+a {
+  color: #303133;
+  text-decoration: none;
+}
+
+.unable-select {
+  user-select: none;
+}
+
+
+.info-text {
+  font-family: "Microsoft YaHei UI Light", "Microsoft YaHei UI", serif;
+  color: #909399;
+}
