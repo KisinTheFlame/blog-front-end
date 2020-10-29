@@ -1,21 +1,13 @@
 <template>
-  <div class="container">
-    <BackendMenu></BackendMenu>
-    <router-view/>
-  </div>
+  <div style="display: flex;flex-direction: column;align-items: stretch"></div>
 </template>
 
 <script>
-import BackendMenu from './BackendMenu'
 export default {
-  name: 'BackendHome',
-  components: {BackendMenu}
+  name: 'BackendHome'
 }
 </script>
 
 <style scoped>
-.container {
-  display: flex;
-  align-items: stretch;
-}
+
 </style>
