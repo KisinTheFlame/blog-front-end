@@ -1,18 +1,18 @@
 <template>
-    <el-upload
-      :before-remove="beforeRemove"
-      :file-list="fileList"
-      :limit="1"
-      :on-exceed="handleExceed"
-      :on-preview="handlePreview"
-      :on-remove="handleRemove"
-      :on-success="handleSuccess"
-      action="/api/admin/cover-upload/"
-      class="image-upload"
-      multiple
-    >
-      <el-button size="small" type="primary">点击上传</el-button>
-    </el-upload>
+  <el-upload
+    :before-remove="beforeRemove"
+    :file-list="fileList"
+    :limit="1"
+    :on-exceed="handleExceed"
+    :on-preview="handlePreview"
+    :on-remove="handleRemove"
+    :on-success="handleSuccess"
+    action="/api/admin/cover-upload/"
+    class="image-upload"
+    multiple
+  >
+    <el-button size="small" type="primary">点击上传</el-button>
+  </el-upload>
 </template>
 
 <script>
@@ -32,7 +32,7 @@ export default {
     handleExceed (files, fileList) {
       this.$message.info('本次选择了' + files.length + '个文件，共选择了' + fileList.length + '个文件。')
     },
-    beforeRemove (file, fileList) {
+    beforeRemove (file) {
       return this.$confirm('确定移除' + file.name + '？')
     },
     handleSuccess (response) {

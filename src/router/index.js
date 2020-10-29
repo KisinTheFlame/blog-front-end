@@ -9,6 +9,7 @@ import CategoryIndex from '../components/category/CategoryIndex'
 import ArticleEditor from '../components/backend/content/ArticleEditor'
 import FriendIndex from '../components/friend/FriendIndex'
 import AboutIndex from '../components/about/AboutIndex'
+import BackendHome from '../components/backend/BackendHome'
 
 Vue.use(Router)
 
@@ -55,12 +56,17 @@ export default new Router({
       component: Login
     },
     {
-      path: '/edit',
-      name: 'ArticleEditor',
-      component: ArticleEditor,
-      meta: {
-        requireAuth: true
-      }
+      path: '/backend-home',
+      name: 'BackendHome',
+      component: BackendHome,
+      redirect: '/index',
+      children: [
+        {
+          path: '/update-article',
+          name: 'UpdateArticle',
+          component: 'ArticleEditor'
+        }
+      ]
     }
   ]
 })
