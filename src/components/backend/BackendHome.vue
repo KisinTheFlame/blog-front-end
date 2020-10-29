@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <ul></ul>
-  </div>
+  <div style="display: flex;flex-direction: column;align-items: stretch"></div>
 </template>
 
 <script>

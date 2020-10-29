@@ -7,7 +7,7 @@
       :on-preview="handlePreview"
       :on-remove="handleRemove"
       :on-success="handleSuccess"
-      action="http://www.kisin.tech:8848/api/admin/cover-upload/"
+      action="/api/admin/cover-upload/"
       class="image-upload"
       multiple
     >

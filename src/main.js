@@ -9,6 +9,7 @@ import 'mavon-editor/dist/css/index.css'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import './assets/css/font-awesome-4.7.0/css/font-awesome.min.css'
+import './assets/css/markdown.css'
 
 let axios = require('axios')
 // axios.defaults.baseURL = 'http://www.kisin.tech:8848/api'

@@ -2,7 +2,7 @@
   <div class="container">
     <header class="front-container"></header>
     <div class="card-container">
-      <el-card v-for="(friend, i) in friends" :key="i" shadow="hover" style="flex-basis: 150px;margin: 10px">
+      <el-card v-for="(friend, i) in friends" :key="i" shadow="hover" style="flex-basis: 300px;margin: 10px">
         <p style="font-size: 20px">{{ friend.name }}</p>
         <p class="info-text">{{ friend.description }}</p>
         <p>
@@ -58,7 +58,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 700px;
+  width: 900px;
   margin: 25px;
 }
 </style>

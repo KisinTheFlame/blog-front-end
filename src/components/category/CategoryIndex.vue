@@ -40,7 +40,7 @@ export default {
     }
   },
   methods: {
-    // 在页面初始化、改变文章类别或翻页时，获取和渲染文章卡片列表
+    // 在页面初始化、改变文章类别或翻页时，获取和渲染文章卡片列表。如果当前在ArticleDisplay，则回到Articles。
     handleArticleListDisplay (index) {
       console.log('changing to category ' + index)
       let _this = this
@@ -58,6 +58,7 @@ export default {
         .then(response => {
           _this.$refs.articleList.articles = response.data
         })
+      this.currentDisplay = 'ARTICLES'
     },
     // 文章展示页面中，点击页头后返回到文章卡片列表
     switchToList () {
