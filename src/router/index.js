@@ -10,6 +10,9 @@ import ArticleEditor from '../components/backend/content/ArticleEditor'
 import FriendIndex from '../components/friend/FriendIndex'
 import AboutIndex from '../components/about/AboutIndex'
 import BackendHome from '../components/backend/BackendHome'
+import ArticleList from '../components/backend/content/ArticleList'
+import ResourceList from '../components/backend/content/ResourceList'
+import UserManagement from '../components/backend/content/UserManagement'
 
 Vue.use(Router)
 
@@ -59,13 +62,27 @@ export default new Router({
       path: '/backend',
       name: 'Backend',
       component: BackendHome,
-      redirect: '/index',
       meta: {
         requireAuth: true
       },
       children: [
         {
-          path: 'update-article',
+          path: '/article-list',
+          name: 'ArticleList',
+          component: ArticleList
+        },
+        {
+          path: '/resource-list',
+          name: 'ResourceList',
+          component: ResourceList
+        },
+        {
+          path: '/user-management',
+          name: 'UserManagement',
+          component: UserManagement
+        },
+        {
+          path: '/update-article',
           name: 'UpdateArticle',
           component: ArticleEditor
         }
