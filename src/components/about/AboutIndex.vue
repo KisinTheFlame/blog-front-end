@@ -23,7 +23,7 @@
       <h1>关于本站 About The Blog</h1>
       <p>自己现学现卖着搭的，做得挺菜的，也没学移动端适配。</p>
       <p>回头一看，还是写了堆屎山。</p>
-      <p>懂了，现在就买《重构》。哦，我已经有了啊，那没事了。</p>
+      <p>懂了，现在就买《重构》。哦，我已经有了。</p>
       <div style="text-align: center">
         <h2>Proudly Powered By</h2>
         <p>Vue.js 2.x</p>
