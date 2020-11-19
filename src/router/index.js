@@ -65,7 +65,7 @@ export default new Router({
       },
       children: [
         {
-          path: 'update-article',
+          path: '/update-article',
           name: 'UpdateArticle',
           component: ArticleEditor
         }
